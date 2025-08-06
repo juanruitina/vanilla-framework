@@ -37,7 +37,7 @@ body:
     id: existing-issue-check
     attributes:
       label: Check if there’s an existing issue about this design
-      description: "Please [search our existing issues](/canonical/vanilla-framework/issues) to see if this has been discussed before."
+      description: "Please [search the existing issues](/canonical/vanilla-framework/issues) to see if this has been discussed before."
       options:
         - label: I have searched the existing issues and this is new.
           required: true
@@ -46,24 +46,18 @@ body:
     id: design-contribution
     attributes:
       label: Tell us about your design contribution
-      description: "What’s the design you want to contribute and why? Please describe the component, update, or idea and the problem it solves."
+      description: "What’s the design you want to contribute and why? Please describe the component, update, or idea and the problem it solves. You can also add links and upload images to prototypes or screenshots of your contribution."
     validations:
       required: true
-
-  - type: input
-    id: visuals
-    attributes:
-      label: Add visuals
-      description: "Provide a link to a prototype or screenshots of your contribution (if you have one). For example: `https://figma.com/...`"
 
   - type: textarea
     id: usage-context
     attributes:
       label: When should we use your contribution?
-      description: "Give us some context and scenarios for using your contribution. For example: 'Use this component on settings pages where users need to toggle between two states.'"
+      description: "Give us some context and scenarios for using your contribution."
 
   - type: textarea
     id: accessibility
     attributes:
       label: How is your contribution accessible?
-      description: "What considerations have you made to comply with accessibility standards (WCAG)? For example: the component is fully keyboard navigable, has sufficient color contrast, and considers ARIA attributes for screen readers."
+      description: "Explain what considerations have you made to comply with [accessibility standards](https://vanillaframework.io/accessibility)."
